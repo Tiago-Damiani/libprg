@@ -1,6 +1,7 @@
 #ifndef LIBPRG_LIBPRG_H
 #define LIBPRG_LIBPRG_H
 
+
 typedef struct {
     double value;
     int error;
