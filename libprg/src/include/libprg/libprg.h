@@ -9,6 +9,7 @@ typedef struct {
 } result_t;
 
 typedef struct {
+    double vetor[];
     int valor;
     bool ordenada;
     int inicio;
@@ -21,7 +22,7 @@ result_t sub(double a, double b);
 result_t sum(double a, double b);
 result_t compute(double a, double b, operation_t op);
 
-void criarlista(bool ordenada);
+void criarlista(int capacidade);
 int inserir(lista* lista, int valor);
 int remover(lista* lista, int valor);
 int buscaLinear(lista* lista, int valor);

@@ -1,7 +1,9 @@
 #include "libprg/libprg.h"
 
-void criarlista(bool ordenada){
-    lista a;
-    if (a.ordenada = 1)
-
+void criarlista(int capacidade){
+    int i, vetor[capacidade];
+    for ( i = 0; i<capacidade ; i++) {
+        printf("Valor %d =",i);
+        scanf("%d",&vetor[i]);
+    }
 }
