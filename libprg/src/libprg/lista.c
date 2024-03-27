@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 typedef struct lista{
-    int tamanho;
+    int vetor;
     int capacidade;
     int* valor;
     bool ordenada;
@@ -10,11 +10,10 @@ typedef struct lista{
     int fim;
 } lista_t;
 
-
 lista_t* criarlista(){
     lista_t* lista = malloc(sizeof (lista_t));
     lista->valor = malloc(sizeof (int) * 10);
-    lista->tamanho = 0;
+    lista->vetor = 0;
     lista->capacidade = 10;
 
     printf("Lista criada\n");
@@ -22,7 +21,10 @@ lista_t* criarlista(){
     return lista;
 }
 
-//int inserir(lista_t* lista, int valor);
+int inserir(lista_t* lista, int valor){
+    lista->vetor[]= valor;
+
+};
 //int remover(lista_t * lista, int valor);
 //int buscaLinear(lista_t * lista, int valor);
 //int buscaBinaria(lista_t * lista, int valor);
