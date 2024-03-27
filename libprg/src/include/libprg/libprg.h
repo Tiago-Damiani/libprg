@@ -8,13 +8,6 @@ typedef struct {
     int error;
 } result_t;
 
-typedef struct {
-    double vetor[];
-    int valor;
-    bool ordenada;
-    int inicio;
-    int fim;
-} lista;
 
 typedef enum { SUM, SUB } operation_t;
 
@@ -22,13 +15,23 @@ result_t sub(double a, double b);
 result_t sum(double a, double b);
 result_t compute(double a, double b, operation_t op);
 
-void criarlista(int capacidade);
-int inserir(lista* lista, int valor);
-int remover(lista* lista, int valor);
-int buscaLinear(lista* lista, int valor);
-int buscaBinaria(lista* lista, int valor);
-int buscaBinariaRecursiva(lista* lista, int valor, int inicio, int fim);
+typedef struct lista lista_t;
 
+lista_t* criarlista();
+int inserir(lista_t* lista, int valor);
+int remover(lista_t * lista, int valor);
+int buscaLinear(lista_t * lista, int valor);
+int buscaBinaria(lista_t * lista, int valor);
+int buscaBinariaRecursiva(lista_t* lista, int valor, int inicio, int fim);
+
+fila_t* criarFila(int capacidade);
+void enfileirar(fila_t* fila, int elemento);
+int desenfileirar(fila_t* fila);
+int getInicio(fila_t* fila);
+int getIinal(fila_t* fila);
+int getTamanho(fila_t* fila);
+bool isVazia(fila_t* fila);
+bool isCheia(fila_t* fila);
 
 
 
