@@ -17,6 +17,8 @@ lista_t* criarlista(){
     lista->tamanho = 0;
     lista->capacidade = 10;
 
+    printf("Lista criada\n");
+
     return lista;
 }
 
