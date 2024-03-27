@@ -20,8 +20,8 @@ lista_t* criarlista(){
     return lista;
 }
 
-int inserir(lista_t* lista, int valor);
-int remover(lista_t * lista, int valor);
-int buscaLinear(lista_t * lista, int valor);
-int buscaBinaria(lista_t * lista, int valor);
-int buscaBinariaRecursiva(lista_t* lista, int valor, int inicio, int fim);
+//int inserir(lista_t* lista, int valor);
+//int remover(lista_t * lista, int valor);
+//int buscaLinear(lista_t * lista, int valor);
+//int buscaBinaria(lista_t * lista, int valor);
+//int buscaBinariaRecursiva(lista_t* lista, int valor, int inicio, int fim);
