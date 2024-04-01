@@ -18,7 +18,7 @@ result_t compute(double a, double b, operation_t op);
 typedef struct lista lista_t;
 
 lista_t* criarlista();
-int inserir(lista_t* lista, int valor);
+//int inserir(lista_t* lista, int valor);
 //int remover(lista_t * lista, int valor);
 //int buscaLinear(lista_t * lista, int valor);
 //int buscaBinaria(lista_t * lista, int valor);
