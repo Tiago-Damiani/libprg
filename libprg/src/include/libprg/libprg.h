@@ -17,12 +17,12 @@ result_t compute(double a, double b, operation_t op);
 
 typedef struct lista lista_t;
 
-lista_t* criarlista();
-//int inserir(lista_t* lista, int valor);
-//int remover(lista_t * lista, int valor);
-//int buscaLinear(lista_t * lista, int valor);
-//int buscaBinaria(lista_t * lista, int valor);
-//int buscaBinariaRecursiva(lista_t* lista, int valor, int inicio, int fim);
+lista_t* criarlista(bool ordenada);
+//int inserir(lista_t* lista, int valores);
+//int remover(lista_t * lista, int valores);
+//int buscaLinear(lista_t * lista, int valores);
+//int buscaBinaria(lista_t * lista, int valores);
+//int buscaBinariaRecursiva(lista_t* lista, int valores, int inicio, int fim);
 
 //fila_t* criarFila(int capacidade);
 //void enfileirar(fila_t* fila, int elemento);
